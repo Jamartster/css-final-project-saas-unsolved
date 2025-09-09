@@ -3,8 +3,239 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front - Landing Page</title>
+    <script
+      src="https://kit.fontawesome.com/e5c9fea935.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Saas company</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="./assets/logos/logo-front.svg" alt="Front" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Hire us</a></li>
+          <a href="#" class="btn-primary">Buy Now</a>
+        </ul>
+        <button id="bars"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Empowering teams with the freedom</h1>
+        <p>Own the unlimited power of the web development</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-video"
+            ><i class="fa-solid fa-circle-play"></i> Play Video</a
+          >
+          <a href="#" class="btn-secondary">Learn more</a>
+        </div>
+      </div>
+      <div class="hero-logos">
+        <div id="logo-a-google">
+          <img src="./assets/logos/google.png" alt="Google" />
+        </div>
+        <div id="logo-b-paypal">
+          <img src="./assets/logos/paypal.jpg" alt="PayPal" />
+        </div>
+        <div id="logo-b-atlassian">
+          <img src="./assets/logos/atlassian.png" alt="Atlassian" />
+        </div>
+        <div id="logo-a-asana">
+          <img src="./assets/logos/asana.png" alt="Asana" />
+        </div>
+        <div id="logo-b-weave">
+          <img src="./assets/logos/weave.png" alt="Weave" />
+        </div>
+        <div id="logo-a-google-ads">
+          <img src="./assets/logos/google-ads.png" alt="Google-Ads" />
+        </div>
+        <div id="logo-b-calendar">
+          <img src="./assets/logos/calendar.png" alt="Calendar" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Front -->
+    <section class="why-front">
+      <h2>Why front?</h2>
+      <p>
+        Front is an incredibly beautiful, fully responsive, and mobile-first
+        project on the web - it is the starting point for creative sites
+      </p>
+      <div class="why-items">
+        <span>Basic Elements</span>
+        <span>Components</span>
+        <span>Combined components</span>
+        <span>Page</span>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <h2>Pricing</h2>
+      <p>No additional costs. Pay for what you use</p>
+      <div class="pricing-box">
+        <h3><span class="price">59</span> / mo</h3>
+        <p .sub-title>
+          Start your Front business now. 100% guaranteed money back. No
+          questions asked.
+        </p>
+        <a href="#" class="btn-video"
+          ><i class="fa-solid fa-circle-play"></i> Play Video</a
+        >
+        <p>No credit card required.</p>
+      </div>
+      <div class="pricing-features">
+        <div class="feature">
+          <img src="./assets/images/components.svg" alt="" />
+          <h4>Hundreds of components</h4>
+          <p>
+            Achieve maximum productivity with minimum effort with Front and
+            create robust Limitless projects.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="./assets/images/images.svg" alt="" />
+          <h4>Images included</h4>
+          <p>We made custom license for all our premium images in the front</p>
+        </div>
+        <div class="feature">
+          <img src="./assets/images/cancel.svg" alt="" />
+          <h4>Cancel anytime</h4>
+          <button>sketch</button>
+          <p>If it's not for you, just cancel, no hidden costs or fees.</p>
+        </div>
+        <div class="feature">
+          <img src="./assets/images/moneyback.svg" alt="" />
+          <h4>Money back</h4>
+          <p>100% guaranteed money back. No questions asked.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hire Us -->
+    <section class="hire">
+      <div class="testimonial">
+        <div>
+          <h3>Hire Us</h3>
+          <p>Whatever your goal - we will get you there</p>
+          <blockquote>
+            “I love front! I love the ease of use, I love the fact that I have
+            total creative freedom...”
+          </blockquote>
+        </div>
+        <div class="bottom">
+          <p>
+            <strong>Charlotte Moore</strong><br />Head of Commercials, Slack
+          </p>
+          <img src="./assets/images/man_one.jpg" alt="man-one" />
+        </div>
+      </div>
+      <div class="form">
+        <h3>Fill out the form and we'll be in touch as soon as possible</h3>
+        <form>
+          <div class="form-row">
+            <input name="first-name" type="text" placeholder="First name" />
+            <input name="last-name" type="text" placeholder="Last name" />
+          </div>
+          <input name="email" type="email" placeholder="Email" />
+          <div class="form-row">
+            <select name="budget" id="budget-select" required>
+              <option value="">Budget</option>
+              <option value="under-1">Under $1</option>
+              <option value="1to20">$1 - $20</option>
+              <option value="21+">$21+</option>
+            </select>
+            <select name="country" id="country-select" required>
+              <option value="">Country</option>
+              <option value="usa">U.S.A.</option>
+              <option value="spain">Spain</option>
+              <option value="nepal">Nepal</option>
+            </select>
+          </div>
+          <textarea
+            id="tell-us-more"
+            name="tell-us-more"
+            rows="5"
+            columns="33"
+            placeholder="Tell us more about your project, needs, and timeline, please..."
+          ></textarea>
+          <label
+            ><input type="checkbox" /> Yes, I’d like to receive marketing emails
+            from Front. I have the right to opt out at any time.</label
+          >
+          <a href="view-privacy-policy">View privacy policy</a>
+          <button type="submit" class="btn-primary">Submit Form</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-left">
+        <img src="./assets/logos/logo-front.svg" alt="Front" />
+        <p>
+          <i class="fa-solid fa-location-arrow"></i> 153 Williamson Plaza,
+          Maggieberg
+        </p>
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+1062109222"> +1 (062) 109-9222</a>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Hire us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Features</h4>
+          <ul>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Release notes</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Documentation</h4>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">Tech Requirements</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-info-circle"></i>Help</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-user-circle"></i>Your Account</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
