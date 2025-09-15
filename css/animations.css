@@ -1,0 +1,173 @@
+/* Animations */
+@keyframes slideInFade {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Tablet & mobile styles */
+@media (max-width: 1023px) {
+  .hero {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 750px;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    max-width: initial;
+  }
+
+  [id^="logo-a"],
+  [id^="logo-b"] {
+    animation: none;
+    opacity: 100%;
+  }
+
+  .nav-links a {
+    display: none;
+  }
+
+  nav #bars {
+    display: block;
+  }
+
+  .pricing-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pricing-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    width: 95%;
+  }
+
+  .pricing-header h3 {
+    text-align: center;
+  }
+
+  .hire {
+    flex-direction: column;
+  }
+
+  .testimonial {
+    display: flex;
+    justify-content: space-around;
+    gap: 5em;
+    margin-left: 5px;
+    width: auto;
+  }
+
+  .bottom img {
+    margin-top: 2em;
+  }
+
+  #privacy {
+    align-self: flex-start;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 3em;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .why-items {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30% 0 30%;
+  }
+
+  .why-items span {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .why-items span::after {
+    display: none;
+  }
+
+  .pricing-box {
+    width: 98%;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom {
+    text-align: center;
+  }
+
+  .bottom img {
+    margin-bottom: 3em;
+  }
+
+  form {
+    display: grid;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #first-name,
+  #last-name {
+    width: 100%;
+  }
+
+  .form-row input,
+  .form-row select {
+    width: 100%;
+  }
+
+  footer {
+    display: grid;
+  }
+
+  .footer-left {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
