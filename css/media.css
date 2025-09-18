@@ -1,0 +1,188 @@
+/* Tablet & mobile styles */
+@media (max-width: 1023px) {
+  [class^="btn"]:hover,
+  .btn-primary:last-child:hover {
+    background-color: transparent;
+    color: #2476ff;
+  }
+
+  .hero {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 750px;
+  }
+
+  .heroes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 664px;
+  }
+
+  .hero-logos {
+    margin-top: 60px;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    max-width: initial;
+  }
+
+  [id^="logo-a"],
+  [id^="logo-b"] {
+    animation: none;
+    opacity: 100%;
+  }
+
+  .nav-links a {
+    display: none;
+  }
+
+  nav #bars {
+    display: block;
+  }
+
+  .pricing-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pricing-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    width: 95%;
+  }
+
+  .pricing-header h3 {
+    text-align: center;
+  }
+
+  .hire {
+    flex-direction: column;
+  }
+
+  .testimonial {
+    display: flex;
+    justify-content: space-around;
+    gap: 5em;
+    margin-left: 0.3rem;
+    width: auto;
+  }
+
+  #privacy {
+    align-self: flex-start;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 3em;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .why-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .why-items span {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 27.5%;
+    justify-content: center;
+  }
+
+  .why-items span::after {
+    display: none;
+  }
+
+  .pricing-box {
+    width: 98%;
+  }
+
+  .pricing-features {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .pricing-features .feature {
+    width: 100%;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hire-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  blockquote {
+    text-align: center;
+  }
+
+  .bottom {
+    text-align: center;
+  }
+
+  .bottom img {
+    margin-bottom: 3em;
+  }
+
+  form {
+    display: grid;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #first-name,
+  #last-name {
+    width: 100%;
+  }
+
+  .form-row input,
+  .form-row select {
+    width: 100%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-left {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+}
